@@ -1,0 +1,279 @@
+.logo-img {
+    margin-left: 15px;
+}
+#btn-id {
+     border-radius: 50px;
+    width: 70px;
+    border: 1px solid black;
+    height: 30px;
+    font-size: 12px;
+    color: black;
+    background-color:transparent;
+}
+#btn-id:hover {
+    background-color:orangered;
+}
+footer{
+    background-color: #010101;
+    color:white;
+    font-size: 12px;
+}
+#content-dim{
+    color: grey;
+    text-decoration: none;
+}
+#content-dim-a{
+    color: grey;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#content-dim-a:hover{
+    color:black;
+}
+#content-dim:hover{
+    color:white;
+}
+#img{
+    text-decoration: none;
+    font-size: 17px;
+    color: grey;
+}
+#whitespace{
+    background-color: white;
+}
+
+#img:hover{
+    
+    color:white;
+}
+#language-id{
+   
+    font-size: 13px;
+    color:white;
+    padding: 10px;
+    border-radius: 54px;
+    border-color: white;
+    background-color: black;
+}
+#lng-id-id{
+    font-size: 13px;
+    border-radius: 10px;
+    width: 480px;
+    height: 150px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+     
+}
+.nav-item dropdown{
+
+font-size: 50px;
+}
+
+
+.carousel-caption{
+    margin-bottom: 300px;
+    font-style: oblique;
+}
+#btn-back-image{
+    border-radius: 50px;
+    width: 300px;
+    border: none;
+    height: 60px;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+}
+#btn-back-image-a{
+    border-radius: 50px;
+    width: 300px;
+    border: 1px solid white;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color:transparent ;
+  }
+#btn-back-image-c{
+    border-radius: 50px;
+    width: 150px;
+    border: 1px solid white;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    background-color:transparent ;
+    margin-bottom: 15px;
+   }
+#pwd{
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+#p-link{
+    text-decoration: none;
+    color: black ;
+}
+
+#btn-back-image-b{
+    border-radius: 50px;
+    width: 250px;
+    border: 0px solid;
+    height: 50px;
+    font-size: 20px;
+    background-color:red ;
+    color:white;
+}
+
+#audio{
+    text-decoration: none;
+    color:grey;
+    font-size: 12px;
+}
+
+#btn-back-image-g{ 
+    border-radius: 50px;
+     width: 300px; 
+    
+    height: 40px;
+    border: 0px solid;
+    text-align: center;
+    font-size: 20px;
+    background-color:rgb(223, 43, 43) ;
+    color:white;
+    /* margin-left: 400px; */
+    position: relative;
+   
+} 
+
+#btn-back-image-f{
+    border-radius: 50px;
+    width: 400px;
+    border: 0px solid;
+    height: 50px;
+    font-size: 20px;
+    background-color:red ;
+    color:white;
+}
+
+#btn-back-image-f:hover{
+    background-color: red;
+    color: black;
+}
+
+
+ #whitespace-back-image{
+    background-image: url("image3.jpg");
+    width: 1100px;
+    height: 200px;
+   
+    
+} 
+#abstract{
+    text-align: center;
+    color: white;
+}
+
+
+#btn-back-image-b:hover{
+    background-color: red;
+    color: black;
+}
+
+#btn-back-image-a:hover{
+background-color:white;
+color:black;
+}
+
+#text-id-id{
+    color:white;
+    background-color: red;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-left: 150px;
+    padding-top: 20px;
+    padding-bottom: 2px;
+}
+
+
+
+#text-id{
+    color:white;
+    background-color: black;
+    font-size: 25px;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    
+}
+.text-block {
+  
+    bottom: 20px;
+    right: 10px;
+    padding-left: 100px;
+    color: black;
+    padding-bottom: 100px;
+  }
+  h3{
+      font-weight: bold;
+      
+  }
+  h5{
+    font-weight: bold;
+  }
+  #February{
+      font-size: 14px;
+      color:grey;
+  }
+  #black-back{
+      background-color: black;
+      color: white;
+      /* background-image: url("covid-19.jpg"); */
+  }
+  #stock_image{
+      text-decoration: none;
+  }
+  #royalty_images{
+      text-align: center;
+     
+  }
+  #p1{
+     
+     text-align: center;
+     /* padding-left: 200px;
+     padding-right: 200px; */
+     font-size: 14px;
+     color:grey;
+  }
+  #bg_image{
+      background-image: url("bg_image.jpg");
+      width: 1500px;
+      height: 400px;
+      color: white;
+  }
+  
+  #id-h2{
+     padding-left: 100px;
+     padding-top: 130px;
+     font-size: 45px;
+  }
+  #h5-id{
+    padding-left: 100px ;
+  }
+  #data-id{
+      padding:25px;
+      text-align: justify;
+  }
+  .div2{
+      width:480px;
+      height: 300px;
+      margin-left: 50px;
+      margin-right: 50px;
+      padding-left:50px;
+      padding-top: 20px;
+      border:5px solid white;
+      background-color: white;
+      color:black;
+      border-radius: 10px;
+  }

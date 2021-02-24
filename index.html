@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <title>Shutter</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <style>
+        .navbar-nav-right {
+            float: right;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-gap: 1px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- navbar starts here -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <img src="assets/image/logo.png" class="logo-img" alt="" width="130" height="30" style="margin-left: 20px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" style="margin-left: 13px"
+                            id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            IMAGES</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Images home</a></li>
+                            <li><a class="dropdown-item" href="#">Currated Collections</a></li>
+                            <li><a class="dropdown-item" href="#">Photos</a></li>
+                            <li><a class="dropdown-item" href="#">Vectors</a></li>
+                            <li><a class="dropdown-item" href="#">Offset Images</a></li>
+                            <li><a class="dropdown-item" href="#">Categories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            FOOTAGE</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Footage home</a></li>
+                            <li><a class="dropdown-item" href="#">Currated Collections</a></li>
+                            <li><a class="dropdown-item" href="#">Shutterstock Select</a></li>
+                            <li><a class="dropdown-item" href="#">Shutterstock Elements</a></li>
+                            <li><a class="dropdown-item" href="#">Categories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            MUSIC</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Music home</a></li>
+                            <li><a class="dropdown-item" href="#">Premium Beat</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TEMPLATES</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Templates home</a></li>
+                            <li><a class="dropdown-item" href="#">Social Media Templates</a></li>
+                            <li><a class="dropdown-item" href="#">Print Templates</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EDITORIAL</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Editorial home</a></li>
+                            <li><a class="dropdown-item" href="#">Entertainment</a></li>
+                            <li><a class="dropdown-item" href="#">News</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            3D Models </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Turbo Squid</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TOOLS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Shutterstock Editor</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile App</a></li>
+                            <li><a class="dropdown-item" href="#">Plugins</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            BLOG</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Blog home</a></li>
+                            <li><a class="dropdown-item" href="#">Design</a></li>
+                            <li><a class="dropdown-item" href="#">Video</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ENTERPRISE</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pricing</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Blog home</a></li>
+                            <li><a class="dropdown-item" href="#">Design</a></li>
+                            <li><a class="dropdown-item" href="#">Video</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a style="text-decoration: none" href="#"> <i class="far fa-heart fa-lg nav-link active "
+                                aria-current="page" href="#"></i> </a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="btn-id" class="logo-img">login</button>
+                        <button id="btn-id" class="logo-img">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar ends here -->
+
+    <main>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 450px;">
+                <div class="carousel-item active">
+                    <img src="assets/image/image1.jpg" class="d-block w-100" alt="img1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>First slide label</h2>
+                        <h5>Some representative placeholder content for the first slide.</h5>
+                        <button id="btn-back-image" class="back-images">Get Start</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/image/image2.png" class="d-block w-100" alt="img2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>2nd slide label</h2>
+                        <h5>Some representative placeholder content for the first slide.</h5>
+                        <button id="btn-back-image" class="back-images">Get Start</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/image/image3.jpg" class="d-block w-100" alt="img3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>3rd slide label</h2>
+                        <h3>Some representative placeholder content for the first slide.</h3>
+                        <button id="btn-back-image" class="back-images">Get Start</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div id="text-id">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h6> Download 10 FREE images now with a risk-free trial.</h6>
+                    </div>
+                    <div class="col-md-4"><button id="btn-back-image-a" class="back-images">Start your free
+                            trial</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-md-12" id="whitespace-back-image">
+                    <br>
+                    <h4 id="abstract">Abstract thinking ahead</h4>
+                    <p id="abstract">Full of fun shapes, vivid colors, and bold designs,
+                        find inspiration, tips, tricks, and all <br>the latest trends in the world of abstract imagery.
+                    </p>
+                    <div class="col-md-12 col-6">
+                        <button id="btn-back-image-g" class="back-images">Find Abstract</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10" id="royalty-font">
+                    <br>
+                    <h4>Royalty-free stock images, photos, videos, and more for your creative projects</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"> <a
+                        href="https://www.google.com/search?q=shutterstock+images&tbm=isch&ved=2ahUKEwj_5dOV3ffuAhVvErcAHTFlCAgQ2-cCegQIABAA&oq=shutterstock+&gs_lcp=CgNpbWcQARgAMgIIADIECAAQQzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOggIABCxAxCDAToFCAAQsQM6CggAELEDEIMBEEM6BwgAELEDEENQnhpY_0tg-mZoAXAAeACAAa8BiAHLC5IBBDAuMTCYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=uZ0wYL-lM--k3LUPscqhQA&bih=638&biw=1366"><img
+                            src="assets/image/image-alone.jpg" style="height: 220px;  width: 350px;">
+                        <p id="p-link"><br>Photos
+                            <br>Explore proffessional stock photos
+                        </p>
+                    </a></div>
+                <div class="col-md-4">
+                    <iframe width="350" height="220" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <a href="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        <p id="p-link"><br>Footage
+                            <br>Experience 4K and HD video clips, including exclusive content
+                        </p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.shutterstock.com/search/audio+library"> <img src="assets/image/music.jpg"
+                            style="height: 220px; width: 350px;">
+                        <p id="p-link"><br>Music
+                            <br>Discover hand picked PRO music not available anywhere
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <br><br>
+            <div class="container">
+                <div class="row">
+                    <h5> Royalty free stock assets curated for you</h5>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-6"><img src="assets/image/image12.jpg" usemap="#workmap"
+                            style="height: 220px; width: 270px;">
+                        <h5>Potraits of diversity</h5>
+                    </div>
+                    <div class="col-md-3 col-6"><img src="assets/image/mechanical.jpg"
+                            style="height: 220px;  width: 270px;">
+                        <h5>Celebrations</h5>
+                    </div>
+                    <div class="col-md-3 col-6"><img src="assets/image/awm.jpg" style="height: 220px;  width: 270px;">
+                        <h5>Autmn</h5>
+                    </div>
+                    <div class="col-md-3 col-6"><img src="assets/image/shutter_off_img6.jpg"
+                            style="height: 220px;  width: 270px;">
+                        <h5>Openings</h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-6"><img src="assets/image/image9.jpg"
+                            style="height: 250px;  width: 1100px;"></div>
+                </div>
+            </div>
+            <br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"><img src="assets/image/mechanical.jpg" style="height: 280px; width: 420px;">
+                    </div>
+                    <div class="col-md-5"><img src="assets/image/see_you_soon.png" style="height: 280px; width: 300px;">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" name="email" id="pwd" placeholder="Email">
+                        <hr>
+                        <br>
+                        <input type="text" name="pwd" id="pwd" placeholder="Password">
+                        <hr>
+                        <br>
+                        <button id="btn-back-image-b" class="back-images">Create account</button>
+                        <br>
+                        <br>
+                        <h6> By creating an account, I agree to Shutterstocks <a href="#">Website Terms</a> , <a
+                                href="#"></a> <a href="#">Privacy policy </a> and <a href="#"></a>Licencing terms.</a>
+                        </h6>
+                        <hr>
+                        <h6>Already have an account ? <a href="#">Login</a></h6>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h3>Top stock image searches for February</h3>
+                    <br>
+                    <br>
+                </div>
+                <div class="row" id="February">
+                    <div class="col-md-2">Background</div>
+                    <div class="col-md-2"> Valentine's Day</div>
+                    <div class="col-md-2"> Spring</div>
+                    <div class="col-md-2"> Car</div>
+                    <div class="col-md-2"> Sky</div>
+                </div>
+                <div class="row" id="February">
+                    <div class="col-md-2">Abstract</div>
+                    <div class="col-md-2"> Flower </div>
+                    <div class="col-md-2"> Heart </div>
+                    <div class="col-md-2"> Women </div>
+                    <div class="col-md-2"> Arrows </div>
+                </div>
+                <div class="row" id="February">
+                    <div class="col-md-2">3D</div>
+                    <div class="col-md-2"> Art </div>
+                    <div class="col-md-2"> Carnaval </div>
+                    <div class="col-md-2"> Logo </div>
+                    <div class="col-md-2"> Family </div>
+                </div>
+                <div class="row" id="February">
+                    <div class="col-md-2">Pattern</div>
+                    <div class="col-md-2"> Bussiness </div>
+                    <div class="col-md-2"> Icon </div>
+                    <div class="col-md-2"> Food </div>
+                    <div class="col-md-2"> Coffee </div>
+                </div>
+                <br><br>
+            </div>
+        </div>
+
+        <div class="container" id="black-back">
+            <div class="row">
+                <div class="col-md-6">
+                    <br>
+                    <h4>The COVID-19 Resource Hub</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Get free content, plus the latest updates, insights, and tools to keep performance and
+                        productivity on track.</h6>
+                </div>
+                <div class="col-md-3 col-6"> <button id="btn-back-image-b" class="back-images">Take a Look</button>
+                </div>
+                <div class="col-md-2 col-6"><img src="assets/image/covid-19.jpg" style="width: 200px; height:90px;">
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <br>
+                <h5>Image tools to help you work faster and smarter</h5>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12"><img src="assets/image/phone.jpg"
+                        style="height: 220px;  width: 360px;"><br>
+                    <h6>Mobile App</h6>
+                    <br>Search for images and video on-the-go with your iOS or Android device. Download to your phone
+                    immediately or to your desktop later
+                </div>
+                <div class="col-md-4 col-12"><img src="assets/image/shutter_stock_editor.jpg"
+                        style="height: 220px;  width: 360px;"><br>
+                    <h6>Shutterstock Editor</h6>
+                    <br>Save time by croping ,resizing and editing your images using our free and easy-to-use online
+                    photo editor.
+                </div>
+                <div class="col-md-4 col-12"><img src="assets/image/photoshop_image.jpg"
+                        style="height: 220px;  width: 360px;"><br>
+                    <h6>Photoshop</h6>
+                    <br>Use these free plugins to find and download the night images without leaving your favorite apps.
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <br>
+                <h5>
+                    Find enterprise solutions aimed at growing your business</h5>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12"><img src="assets/image/premier.jpg"
+                        style="height: 250px;  width: 360px;"><br>
+                    <h5>Learn about Shutterstock Premier</h5>
+                    A creative platform built for your team
+                </div>
+                <div class="col-md-4 col-12"><img src="assets/image/discover_shutter.jpg"
+                        style="height: 250px;  width: 360px;"><br>
+                    <h5>Discover Shutterstock Custom</h5>
+                    On-brand content created for you
+                </div>
+                <div class="col-md-4 col-12"><img src="assets/image/developer_shutter.jpg"
+                        style="height: 250px;  width: 360px;"><br>
+                    <h5>Add API integrations</h5>
+                    Leading brands rely On Shutterstock to power their platform.
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="text-id-id">
+                <div class="row" style="width: 900px; height: 40px;">
+                    <div class="col-md-5 col-2">
+                        Download 10 FREE images now with a risk-free trial. </div>
+                    <div class="col-md-7 col-6"><button id="btn-back-image-c" class="back-images-img">Get
+                            started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-6 offset-md-4">
+                        <h5>Shutterstock powers creativity for global brands</h5>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-md"><img src="assets/image/google.png" style="height: 60px; width: 80px;">
+                    </div>
+                    <div class="col-md"><img src="assets/image/amc.png" style="height: 60px; width: 80px;">
+                    </div>
+                    <div class="col-md"><img src="assets/image/aol.png" style="height: 80px; width: 80px;">
+                    </div>
+                    <div class="col-md"><img src="assets/image/BBDO.png" style="height: 80px; width: 80px;">
+                    </div>
+                    <div class="col-md"><img src="assets/image/BuzzFeed.png" style="height: 80px; width: 80px;">
+                    </div>
+                    <div class="col-md"><img src="assets/image/CapitalOne.png" style="height: 80px; width: 80px;">
+                    </div>
+                    <div class="col-md"><img src="assets/image/marvel.png" style="height: 80px; width: 80px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="container">
+            <h5>Browse by stock image category</h5>
+            <br>
+            <div class="row" id="stock_image">
+                <div class="col-md">
+                    <a id="content-dim-a" href="#">
+                        <ul>Abstract</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Animals/Wildlife</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>The Arts</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Backgrounds/Textures</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Beauty/Fashion</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Buildings/Landmarks</ul>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <a id="content-dim-a" href="#">
+                        <ul>Business/Finance</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Celebritiese</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Editorial</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Education</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Food and Drink</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Healthcare/Medical</ul>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <a id="content-dim-a" href="#">
+                        <ul>Holidays</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Illustrations/Clip-Art</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Industrial</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Interiors</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Miscellaneous</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Nature</ul>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <a id="content-dim-a" href="#">
+                        <ul>Objects</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Parks/Outdoor</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>People</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Religion</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Science</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Signs/Symbols</ul>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <a id="content-dim-a" href="#">
+                        <ul>Sports/Recreation</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Technology</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Transportation</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Vectors</ul>
+                    </a>
+                    <a id="content-dim-a" href="#">
+                        <ul>Vintage</ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h5>The absolute highest-grade images, videos, and music on the market</h5>
+                <br>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4"><img src="assets/image/shutter_offset.jpg" style="width: 350px; height: 300px;">
+                    <a href="https://www.offset.com/" id="p-link"><br>
+                        <h6>Offset</h6>
+                        Captivate your audience with authentic images from award winning artist
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <video width="350" height="300" controls>
+                        <source src="https://www.youtube.com/watch?v=P9-FCC6I7u0" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video><a href="movie.mp4" id="p-link">
+                        <br>
+                        <h6>Shuterstock Select </h6>
+                        Get highly curated footage capture industry pros on the latest gear.
+                    </a>
+                </div>
+                <div class="col-md-4"><a href="#" id="p-link">
+                        <img src="assets/image/premium_beat.jpg" style="width: 350px; height: 300px;">
+                        <br>
+                        <h6>Premium Beat </h6>
+                        Score only the best sound for your projects with an exclusive library of music.
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="royalty_images">
+                <div class="col-md-12 col-12">
+                    <h4>Royalty free stock images, photos, and videos</h4>
+                </div>
+            </div>
+            <div class="row" id=p1>
+                <div class="col-md-12 col-12">
+                    <p>Shutterstock offers the best quality, royalty free stock images, photos, vectors,
+                        illustrations, footage, video, and music for nearly any application. From illustrations to
+                        vectors, when you need the perfect stock image for your website or blog, we have you covered.
+                        Our massive selection of stock footage and music tracks are the ideal choice to set the scene in
+                        your next short or feature film.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row" id="bg_image">
+
+            <div class="col-md-6 col-4">
+                <h1 id="id-h2">Access exclusive features with a free account</h1>
+                <h5 id="h5-id">Create your free account and start downloading incredible royalty-free images, stock
+                    footage and music tracks now. Save and share your favorite assets,
+                    try watermarked royalty free images or videos before you buy, plus so much more.</h5>
+            </div>
+            <div class=" col-md-6 col-4">
+                <br>
+                <br>
+                <div class="div2">
+                    <h3>Sign Up</h3>
+
+                    <input type="text" name="email" id="pwd" placeholder="Email">
+                    <hr>
+                    <br>
+                    <input type="text" name="pwd" id="pwd" placeholder="Password">
+                    <hr>
+                    <br>
+                    <button id="btn-back-image-f" class="back-images">Create account</button>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="data-id">
+            The 10 images per month annual plan will automatically charge you each month for USD $29, allowing you to
+            continue to download content without interruption. If you wish to cancel during your free trial period,
+            visit the Plans section of the My Account page here. To ensure seamless service, the charge will happen
+            approximately 4 days before your free trial period ends. You may be subject to a plan price adjustment if
+            you cancel during your first year after the free trial period. After that, your plan will automatically
+            renew for another 1-year commitment, unless you contact us. For more details on billing, click here. Limit 1
+            free trial per person. Users are not eligible for this PICK10FREE promotion if they have used any other
+            prior Free Trial coupons with the same user account, email address, or payment method.
+            This promotion may not be combined with any other offers, coupons, or discounts for the remainder of the
+            subscription.
+
+        </div>
+    </main>
+    <footer>
+        <div class="container"><br><br>
+            <div class="row">
+                <div class="col-md-11">
+                    <p class="content-dim">We have more than <a id="img" href="#"> 360 million images </a> as of
+                        December 31, 2020.</p>
+                </div>
+                <div class="dropdown col-md-1">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="language-id"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fal fa-globe fa-lg"></i> LANGUAGE
+                    </button>
+                    <ul class="dropdown-menu" id="lng-id-id" aria-labelledby="dropdownMenu2">
+                        <div class="row">
+                            <div class="col-md-3">Cestina</div>
+                            <div class="col-md-3">Francais</div>
+                            <div class="col-md-3">Norsk</div>
+                            <div class="col-md-3">Svenska</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">Dansk</div>
+                            <div class="col-md-3">Indonesia</div>
+                            <div class="col-md-3">Polski</div>
+                            <div class="col-md-3">Tieng Viet</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">Deutch</div>
+                            <div class="col-md-3">Italiano</div>
+                            <div class="col-md-3">Portugese</div>
+                            <div class="col-md-3">Turkse</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">English</div>
+                            <div class="col-md-3">Magyar</div>
+                            <div class="col-md-3">Romania</div>
+                            <div class="col-md-3">Eyyenvika</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">Espanol</div>
+                            <div class="col-md-3">Nederlands</div>
+                            <div class="col-md-3">Suomi</div>
+                            <div class="col-md-3">Pyccknn</div>
+                        </div>
+                    </ul>
+                </div>
+                <br><br>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <ul>Content</ul>
+                    <br>
+                    <a id="content-dim" href="#">
+                        <ul> Homepage</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Images</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Photos</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Vectors</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Video</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Music</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Editorial</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Popular searches</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Coupons</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Pricing</ul>
+                    </a>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>Premium content</ul>
+                    <br>
+                    <a id="content-dim" href="#">
+                        <ul> Offset stock photos</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Shutterstock Select</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Elements / VFX</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> PremiumBeat</ul>
+                    </a>
+                    <ul> Tools</ul>
+                    <a id="content-dim" href="#">
+                        <ul> Mobile apps</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Shutterstock Editor</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Plugins</ul>
+                    </a>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>For your business</ul>
+                    <br>
+                    <a id="content-dim" href="#">
+                        <ul> Shutterstock Premier</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Shutterstock Studios</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Team Experience</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> API integrations</ul>
+                    </a>
+                    <ul> For contributors</ul>
+                    <a id="content-dim" href="#">
+                        <ul> Sell your content</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> The Shot List</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Mobile app</ul>
+                    </a>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>Our company</ul>
+                    <br>
+                    <a id="content-dim" href="#">
+                        <ul> About us</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Careers</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Press/Media</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Investor relations</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Blog</ul>
+                    </a>
+                    <ul> Partner</ul>
+                    <a id="content-dim" href="#">
+                        <ul> API / Developers</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Affiliate</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Reseller</ul>
+                    </a>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>Support</ul>
+                    <br>
+                    <a id="content-dim" href="#">
+                        <ul> Get help</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Accessibility</ul>
+                    </a>
+                    <ul> Legal</ul>
+                    <a id="content-dim" href="#">
+                        <ul> Terms of use</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> License agreement</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Privacy policy</ul>
+                    </a>
+                    <a id="content-dim" href="#">
+                        <ul> Social media guidelines</ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
